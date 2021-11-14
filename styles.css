@@ -14,6 +14,7 @@
   --dark-color-light: #8a8a8a;
   --dark-color-lighten: #f2f2f2;
   --white-color: #fff;
+  --footer-color: #f1f1f1;
 
   /*===== Font and typography =====*/
   --body-font: 'Poppins', sans-serif;
@@ -139,6 +140,16 @@ img {
   background-color: steelblue;
 }
 
+.icons {
+  display: flex;
+}
+.icon {
+  /* display: inline-block; */
+  width: 2rem;
+  height: 1.3rem;
+  margin-left: 1rem;
+}
+
 /*===== NAV =====*/
 .nav {
   height: var(--header-height);
@@ -172,16 +183,6 @@ img {
 .nav_shop {
   font-size: 1.3rem;
   cursor: pointer;
-}
-
-.header_icons {
-  display: flex;
-}
-.icon {
-  /* display: inline-block; */
-  width: 2rem;
-  height: 1.3rem;
-  margin-left: 1rem;
 }
 
 /*Show menu*/
@@ -500,16 +501,73 @@ img {
 }
 
 /*===== FOOTER =====*/
+.footer {
+  background-color: var(--footer-color);
+  /* max-height: 25vh; */
+}
 .footer__container {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  padding: 1rem 5rem;
+}
+.footer_grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(2, 0.6fr);
+  column-gap: 3rem;
+  grid-template-rows: repeat(2.5, 1fr) 0.4fr;
+}
+.one {
+  grid-column: 1/2.5;
+  padding-left: 3rem;
+}
+.two {
+  grid-column: 2.5/3.5;
+}
+.three {
+  grid-column: 3.5/5;
+}
+.four {
+  grid-column: 1/-1;
 }
 
 .footer__box {
   margin-bottom: var(--mb-4);
 }
 
+.footer_logo_container {
+  position: relative;
+}
+.footer_logo {
+  position: absolute;
+  left: -11%;
+  top: -10%;
+  background-image: url('./assets/images/logo_lg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  width: 60%;
+  color: var(--white-color);
+  height: 12rem;
+}
+.footer_input_container {
+  display: flex;
+}
+.footer_input {
+  width: 80%;
+  margin-bottom: var(--mb-4);
+  padding-bottom: var(--mb-2);
+  border: 0;
+  display: inline-block;
+  background-color: inherit;
+  border-bottom: 1px solid #c4c4c4;
+}
+
 .footer__title {
   font-size: var(--big-font-size);
+  text-transform: uppercase;
+  margin-bottom: var(--mb-4);
+}
+
+.footer_icon {
+  margin-left: -2rem;
 }
 
 .footer__link {
@@ -524,7 +582,8 @@ img {
 }
 
 .footer__copy {
-  padding-top: 3rem;
+  /* padding: 1rem 0; */
+  margin: 2rem 0 -1rem;
   font-size: var(--smaller-font-size);
   color: var(--dark-color-light);
   text-align: center;
