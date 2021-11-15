@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
     <link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5" />
     <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" />
@@ -18,37 +32,42 @@
     <title>Applied Labs | Test Task</title>
 
     <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css" /> -->
+    <link rel="stylesheet" href="./new.css" />
 
     <title>Test Task</title>
   </head>
   <body>
     <!--===== HEADER =====-->
     <header class="l-header" id="header">
+      <section class="header_top">
+        <div>
+          <p class="top_text">20% OFF Sitewide until 9/12</p>
+        </div>
+      </section>
       <nav class="nav bd_grid">
-        <div class="nav__toggle burger" id="nav-toggle">
+        <div class="nav_toggle burger" id="nav-toggle">
           <img class="icon" src="./assets/images/icons/burger.svg" alt="burger_icon_image" />
         </div>
 
-        
         <div class="logo">
-          <a href="#" class="nav__logo">
+          <a href="#" class="nav_logo">
             <img src="./assets/images/icons/logo.svg" alt="logo_image" />
           </a>
         </div>
 
-        <div class="nav__menu" id="nav-menu">
+        <div class="nav_menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#lorem" class="nav__link active">lorem</a></li>
-            <li class="nav__item"><a href="#consectetur" class="nav__link">consectetur</a></li>
-            <li class="nav__item"><a href="#tempor" class="nav__link">tempor</a></li>
-            <li class="nav__item"><a href="#magna" class="nav__link">magna</a></li>
-            <li class="nav__item"><a href="#reprehenderit" class="nav__link">reprehenderit</a></li>
+            <li class="nav_item"><a href="#lorem" class="nav__link active">lorem</a></li>
+            <li class="nav_item"><a href="#consectetur" class="nav__link">consectetur</a></li>
+            <li class="nav_item"><a href="#tempor" class="nav__link">tempor</a></li>
+            <li class="nav_item"><a href="#magna" class="nav__link">magna</a></li>
+            <li class="nav_item"><a href="#reprehenderit" class="nav__link">reprehenderit</a></li>
           </ul>
         </div>
 
-        <div class="nav_shop header_icons icons">
+        <div class="nav_shop icons">
           <img
             class="icon icon_search"
             src="./assets/images/icons/search.svg"
@@ -67,18 +86,12 @@
         </div>
       </nav>
     </header>
+    <section class="space"></section>
 
-    <main >
-      <!--===== HOME =====-->
-      <!-- <section class="home" id="lorem">
-        <div class="home__container bd-grid">
-          
+    <main>
+      <!--===== INFO =====-->
 
-         
-        </div>
-      </section> -->
-
-      <div class="info_container l_main info_bg" id="lorem">
+      <!-- <div class="info_container l_main info_bg " id="lorem">
           <div class="transform text_container">
             <h2 >Rubber Hex Dumbbells</h2>
             <p >
@@ -90,7 +103,7 @@
               looking to expand your gym's capabilities, making dumbbells a priority will take your
               training to the next level.
             </p>
-            <p >Need a way to organize your weights? Check out some of our Storage Options.</p>
+            <p class="sec" >Need a way to organize your weights? Check out some of our Storage Options.</p>
           </div>
           <div class="transform-image image_container">
             <img src="./assets/images/1.png" alt="dumbbell_image" />
@@ -115,95 +128,89 @@
           <div class="photography image_container">
             <img src="./assets/images/3.jpg" alt="woman_with_dumbbell_image" />
           </div>
-        </div>
+        </div> -->
 
-
-
-
-
-
-        <!--===== PRODUCTS =====-->
-                <section class="section products" id="#magna">
-                    <h2 class="products_title">You might also like</h2>
-          
-                    <div class="products_items product_grid">
-                      <article class="item_product ">
-                        <img src="./assets/images/p1.png" alt="sit-up_bench_image" class="product_img" />
-                        <div class="product_label_shipping">Free shipping</div>
-                        <div class="card_info">
-                          <div class="product_name">Product Name1</div>
-                          <div class="product_stars">
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                          </div>
-                          <div class="sneaker__preci item-product_price">$34.00</div>
-                        </div>
-                      </article>
-          
-                      <article class="item_product ">
-                        <img src="./assets/images/p2.png" alt="stability_ball_bench_image" class="product_img" />
-                        <div class="product_label_shipping">Free shipping</div>
-                        <div class="card_info">
-                          <span class="product_name">Product Name2</span>
-                          <div class="product_stars">
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                          </div>
-                          <span class="sneaker__preci item-product_price">$34.00</span>
-                        </div>
-                      </article>
-          
-                      <article class="item_product ">
-                        <img
-                          src="./assets/images/p3.png"
-                          alt="hanging_bell_tension_pull_rope_image"
-                          class="product_img"
-                        />
-                        <div class="product_label_shipping">Free shipping</div>
-                        <div class="card_info">
-                          <span class="product_name">Product Name3</span>
-                          <div class="product_stars">
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                          </div>
-                          <span class="sneaker__preci item-product_price">$34.00</span>
-                        </div>
-                      </article>
-          
-                      <article class="item_product ">
-                        <img src="./assets/images/p4.png" alt="cycle_bike_image" class="product_img" />
-                        <div class="product_label_shipping">Free shipping</div>
-                        <div class="card_info">
-                          <span class="product_name">Product Name4</span>
-                          <div class="product_stars">
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                            <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
-                          </div>
-                          <span class="product_price">$34.00</span>
-                        </div>
-                      </article>
-                    </div>
-                  </section>
-
+      <!--===== PRODUCTS =====-->
+      <!-- <section class="section products" id="magna">
+            <h2 class="products_title">You might also like</h2>
+  
+            <div class="products_items product_grid">
+              <article class="item_product ">
+                <img src="./assets/images/p1.png" alt="sit-up_bench_image" class="product_img" />
+                <div class="product_label_shipping">Free shipping</div>
+                <div class="card_info">
+                  <div class="product_name">Product Name1</div>
+                  <div class="product_stars">
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                  </div>
+                  <div class="sneaker__preci item-product_price">$34.00</div>
+                </div>
+              </article>
+  
+              <article class="item_product ">
+                <img src="./assets/images/p2.png" alt="stability_ball_bench_image" class="product_img" />
+                <div class="product_label_shipping">Free shipping</div>
+                <div class="card_info">
+                  <span class="product_name">Product Name2</span>
+                  <div class="product_stars">
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                  </div>
+                  <span class="sneaker__preci item-product_price">$34.00</span>
+                </div>
+              </article>
+  
+              <article class="item_product ">
+                <img
+                  src="./assets/images/p3.png"
+                  alt="hanging_bell_tension_pull_rope_image"
+                  class="product_img"
+                />
+                <div class="product_label_shipping">Free shipping</div>
+                <div class="card_info">
+                  <span class="product_name">Product Name3</span>
+                  <div class="product_stars">
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                  </div>
+                  <span class="sneaker__preci item-product_price">$34.00</span>
+                </div>
+              </article>
+  
+              <article class="item_product ">
+                <img src="./assets/images/p4.png" alt="cycle_bike_image" class="product_img" />
+                <div class="product_label_shipping">Free shipping</div>
+                <div class="card_info">
+                  <span class="product_name">Product Name4</span>
+                  <div class="product_stars">
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                    <img class="product_star" src="./assets/images/icons/star.svg" alt="star_icon_image" />
+                  </div>
+                  <span class="product_price">$34.00</span>
+                </div>
+              </article>
+            </div>
+        </section> -->
     </main>
 
     <!--===== FOOTER =====-->
-    <footer class="footer section" id="reprehenderit">
-      <div class="footer__container footer_grid">
-        <div class="footer__box one">
-          <h3 class="footer__title">newsletter</h3>
+    <!-- <footer class="footer section" id="reprehenderit">
+      <div class="footer_container footer_grid">
+        <div class="footer_box one">
+          <h3 class="footer_title">newsletter</h3>
           <div class="footer_logo_container">
            <div class="footer_logo"></div>
             <div class="footer_input_container">
@@ -225,7 +232,7 @@
         </div>
 
         <div class="footer__box two">
-          <h3 class="footer__title">Again Faster</h3>
+          <h3 class="footer_title">Again Faster</h3>
           <ul>
             <li><a href="#" class="footer__link">About Us</a></li>
             <li><a href="#" class="footer__link">Blog</a></li>
@@ -239,7 +246,7 @@
         </div>
 
         <div class="footer__box three">
-          <h3 class="footer__title">Get Help</h3>
+          <h3 class="footer_title">Get Help</h3>
           <ul>
             <li><a href="#" class="footer__link">Introductions</a></li>
             <li><a href="#" class="footer__link">Shipping</a></li>
@@ -251,7 +258,7 @@
         <p class="footer__copy four">&#169; 2021 Again Faster. All right reserved</p>
       </div>
      
-    </footer>
+    </footer> -->
 
     <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>

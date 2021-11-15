@@ -13,3 +13,5 @@ Notes:
 - Hamburger animation and/or slide in/out not needed
 
 
+Use picture for placing responsive images.
+
