@@ -222,17 +222,6 @@ img {
     'graphic-design photography';
 }
 
-.info_h3 {
-  font-size: var(--big-grid-size);
-  margin-bottom: 7.5rem;
-}
-.info_text,
-.info_text_two {
-  min-width: 80%;
-}
-.info_text_two {
-  margin-top: 5rem;
-}
 .image_container {
   width: 680px;
   height: 460px;
@@ -277,27 +266,45 @@ img {
   align-self: center;
 }
 
-.text-container {
+.text_container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   padding: 25% 10%;
-  font-family: var(--ff-Fraunces);
 }
 
-.text-container h2 {
-  font-size: var(--fontSize-x25-large);
-  font-weight: var(--fontWeight-Fraunces-900);
-  color: var(--color-very-dark-desaturated-blue);
-  max-width: 15ch;
+.text_container h2 {
+  font-size: var(--big-grid-size);
+  font-weight: var(--font-regular);
+  color: var(--white-color);
+  min-width: 80%;
+  margin-bottom: 7.5rem;
 }
+
+.graphic-design h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+  text-align: center;
+}
+
+/* .info_text,
+.info_text_two {
+  min-width: 80%;
+}
+.info_text_two {
+  margin-top: 5rem;
+} */
 
 .text-container p {
-  font-size: var(--ff-Barlow);
-  font-weight: var(--fontWeight-Barlow-600);
-  color: var(--color-dark-grayish-blue);
-  max-width: 42ch;
+  font-weight: var(--font-regular);
+  color: var(--white-color);
+  min-width: 80%;
+}
+.text-container > p:nth-child(2) {
+  margin-top: 5rem;
 }
 
 /* ===== PRODUCTS ===== */
@@ -318,7 +325,7 @@ img {
 .product_grid {
   max-width: 1440px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
   column-gap: 2rem;
   margin: 0 2.5rem;
 }
@@ -415,14 +422,13 @@ img {
 }
 .footer_logo {
   position: absolute;
-  left: -11%;
-  top: -10%;
-  background-image: url('./assets/images/logo_lg.png');
+  left: -15%;
+  top: 10%;
+  background-image: url('../images/logo_lg.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: 100% auto;
   width: 60%;
-  color: var(--white-color);
   height: 12rem;
 }
 .footer_input_container {
@@ -505,11 +511,6 @@ img {
   }
   .nav__toggle {
     display: none;
-  }
-
-  .footer_input_container {
-    display: flex;
-    justify-content: space-between;
   }
 }
 @media screen and (max-width: 992px) {
