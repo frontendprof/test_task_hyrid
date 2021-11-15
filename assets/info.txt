@@ -1,0 +1,15 @@
+Task description: Show us your HTML, CSS and a bit of JS skills by bringing this design to life. 
+We assume the task will take you about ~5 hours
+Key points:
+
+- Responsiveness
+- SEO Principles (semantic markup, image lazyloading)
+- Clean code
+- Attention to details
+
+Notes:
+
+- You can use any slider you want for the "You might also like" section.
+- Hamburger animation and/or slide in/out not needed
+
+
