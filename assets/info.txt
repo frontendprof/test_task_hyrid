@@ -12,6 +12,28 @@ Notes:
 - You can use any slider you want for the "You might also like" section.
 - Hamburger animation and/or slide in/out not needed
 
+* body > wrapper
+* Use picture for placing responsive images.
+* what is flex 1 1 0 on section_body?
+* Do we need parallax effect with company logo on the center?
+* column-gap review, esp. in header
 
-Use picture for placing responsive images.
+*   wrapper{
+    min-height:100%;
+    display:grid;
+    grid-template:minmax(100px,auto) 1fr minmax(70px,auto) / 1fr
+}
 
+* header{
+    grid-area:header;
+    display:grid;
+    padding:15px;
+    backgroud-color:color;
+    grid-template: 1fr / 1fr minmax(auto,300px) minmax(auto,1100px) 1fr;
+}
+
+* Make custom list style type
+* Make responsive p and h2 tags too
+
+
+https://myalternews.netlify.app/
