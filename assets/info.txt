@@ -34,6 +34,7 @@ Notes:
 
 * Make custom list style type
 * Make responsive p and h2 tags too
+* Check all px rems and make them responsive
 
 
 https://myalternews.netlify.app/
