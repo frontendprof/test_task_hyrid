@@ -39,60 +39,63 @@
     <title>Test Task</title>
   </head>
   <body>
-    <!--===== HEADER =====-->
-    <header class="l-header" id="lorem">
-      <div class="header_body">
-        <section class="header_top">
-          <div>
-            <p class="top_text">20% OFF Sitewide until 9/12</p>
-          </div>
-        </section>
-        <nav class="nav bd_grid">
-          <div class="nav_toggle burger" id="nav-toggle">
-            <img class="icon" src="../assets/images/icons/burger.svg" alt="burger_icon_image" />
-          </div>
-
-          <div class="logo">
-            <a href="#" class="nav_logo">
-              <img src="../assets/images/icons/logo.svg" alt="logo_image" />
-            </a>
-          </div>
-
-          <div class="nav_menu" id="nav-menu">
-            <ul class="nav__list">
-              <li class="nav_item"><a href="#lorem" class="nav_link active">lorem</a></li>
-              <li class="nav_item"><a href="#consectetur" class="nav_link">consectetur</a></li>
-              <li class="nav_item"><a href="#tempor" class="nav_link">tempor</a></li>
-              <li class="nav_item"><a href="#magna" class="nav_link">magna</a></li>
-              <li class="nav_item"><a href="#reprehenderit" class="nav_link">reprehenderit</a></li>
-            </ul>
-          </div>
-
-          <div class="nav_shop icons">
-            <img
-              class="icon icon_search"
-              src="../assets/images/icons/search.svg"
-              alt="search_icon_image"
-            />
-            <img
-              class="icon icon_account"
-              src="../assets/images/icons/account.svg"
-              alt="account_icon_image"
-            />
-            <img
-              class="icon icon_bag"
-              src="../assets/images/icons/bag.svg"
-              alt="shopping_bag_icon_image"
-            />
-          </div>
-        </nav>
-      </div>
-    </header>
-
     <div class="wrapper">
+      <!--===== HEADER =====-->
+      <header class="header_container">
+        <div class="header_body">
+          <section class="header_top">
+            <div>
+              <p class="top_text">20% OFF Sitewide until 9/12</p>
+            </div>
+          </section>
+          <nav class="nav header_main" id="lorem">
+            <div class="nav_toggle burger" id="nav-toggle">
+              <img class="icon" src="../assets/images/icons/burger.svg" alt="burger_icon_image" />
+            </div>
+
+            <div class="logo">
+              <a href="#" class="nav_logo">
+                <img src="../assets/images/icons/logo.svg" alt="logo_image" />
+              </a>
+            </div>
+
+            <div class="nav_menu" id="nav-menu">
+              <ul class="nav__list">
+                <li class="nav_item"><a href="#lorem" class="nav_link active">lorem</a></li>
+                <li class="nav_item"><a href="#consectetur" class="nav_link">consectetur</a></li>
+                <li class="nav_item"><a href="#tempor" class="nav_link">tempor</a></li>
+                <li class="nav_item"><a href="#magna" class="nav_link">magna</a></li>
+                <li class="nav_item">
+                  <a href="#reprehenderit" class="nav_link">reprehenderit</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav_shop icons">
+              <img
+                class="icon icon_search"
+                src="../assets/images/icons/search.svg"
+                alt="search_icon_image"
+              />
+              <img
+                class="icon icon_account"
+                src="../assets/images/icons/account.svg"
+                alt="account_icon_image"
+              />
+              <img
+                class="icon icon_bag"
+                src="../assets/images/icons/bag.svg"
+                alt="shopping_bag_icon_image"
+              />
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- ===== CONTENT ===== -->
       <main>
         <!--===== INFO =====-->
-        <section class="info_container" id="lorem">
+        <section class="info_container" id="consectetur">
           <div class="info_items">
             <div class="info_item text_container">
               <h2>Rubber Hex Dumbbells</h2>
@@ -298,6 +301,7 @@
           </div>
         </section>
       </main>
+
       <!--===== FOOTER =====-->
       <footer class="footer section" id="reprehenderit">
         <div class="footer_items footer_grid">
@@ -377,7 +381,6 @@
       </footer>
     </div>
 
-    <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
