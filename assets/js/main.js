@@ -56,3 +56,29 @@ const imgObserver = new IntersectionObserver((entries, imgObserver) => {
 lazyImgs.forEach((img) => {
   imgObserver.observe(img);
 });
+
+// Implementation of responsive slider on product items
+$(document).ready(function () {
+  $('.slider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    mobileFirst: true,
+
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          waitForAnimate: true,
+        },
+      },
+      {
+        breakpoint: 9999,
+        settings: 'unslick',
+      },
+    ],
+  });
+});
