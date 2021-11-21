@@ -58,27 +58,30 @@ lazyImgs.forEach((img) => {
 });
 
 // Implementation of responsive slider on product items
-$(document).ready(function () {
-  $('.slider').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    mobileFirst: true,
 
-    responsive: [
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          waitForAnimate: true,
-        },
-      },
-      {
-        breakpoint: 9999,
-        settings: 'unslick',
-      },
-    ],
-  });
+$slickVar = false;
+function slickSlider() {
+  if ($(window).width() < 767) {
+    if (!$slickVar) {
+      $('.slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        waitForAnimate: true,
+      });
+      $slickVar = true;
+    }
+  } else if ($(window).width() > 768) {
+    if ($slickVar) {
+      $('.slickSlider').slick('unslick');
+      $slickVar = false;
+    }
+  }
+}
+
+$(document).ready(function () {
+  slickSlider();
+});
+$(window).on('resize', function () {
+  slickSlider();
 });

@@ -37,5 +37,4 @@ Notes:
 * Check all px rems and make them responsive
 * Fix lazyloading on mobile too
 
-
-https://myalternews.netlify.app/
+* --clr-primary, clr-body, clr-bg,
