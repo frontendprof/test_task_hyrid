@@ -38,9 +38,3 @@ Notes:
 * Fix lazyloading on mobile too
 
 * --clr-primary, clr-body, clr-bg,
-
-<form class="input-form" id="form">
-      <input id="email" placeholder="Your email address">
-      <small class="input-form--small">Please provide a valid email address</small>
-      <input type="submit" value="Notify Me">
-    </form>
