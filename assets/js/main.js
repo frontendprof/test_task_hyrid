@@ -21,13 +21,6 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener('click', linkAction));
 
-/*===== CHANGE COLOR HEADER =====*/
-window.onscroll = () => {
-  const nav = document.getElementById('header');
-  if (this.scrollY >= 200) nav.classList.add('scroll-header');
-  else nav.classList.remove('scroll-header');
-};
-
 // Lazy Loading
 const lazyImgs = document.querySelectorAll('img[data-src]');
 // const labelAll = document.querySelectorAll('product_label_shipping');
